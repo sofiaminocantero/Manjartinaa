@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <title>Manjartina</title>
   </head>
@@ -32,7 +33,7 @@
     </header>
 
     <main class="colorfondo">
-      <section class="introduccion">
+      <section class="introduccion" data-aos="fade-down">
         <h1 class="introduccion__titulo">Sobre nosotros</h1>
         <p class="introduccion__info">
           Somos una pequeña organización cuyo objetivo es compartir la cultura
@@ -42,13 +43,13 @@
           experiencia en la cocina. ¡Buscamos que más gente aprecie el arte de
           la cocina a través de comida tradicional!
         </p>
-        <div class="recetacuerpo__fotos--centrado">
+        <section class="quienessomosfinal">
           <h2 class="introduccion__subtitulo">
             ¡Animate a sumarte y preparar una receta que Argentina siempre te
             espera!
           </h2>
           <img src="../imagenes/argentina.png" alt="Mapa de Argentina" />
-        </div>
+        </section>
         <div class="quienessomosfinal">
           <h2 class="introduccion__subtitulo">
             Enamorate del arte de la cocina y deja que te inspire a probar cosas
@@ -74,5 +75,9 @@
       </p>
       <p class="footer__contenido">Desarrollado por: Sofía Miño</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <title>Manjartina</title>
   </head>
@@ -34,7 +35,12 @@
     <main class="colorfondo">
       <section class="recetacuerpo recetacuerpo__fotos">
         <h1 class="recetacuerpo__titulo">ALFAJORES DE MAICENA RICOS</h1>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/maicenapaguno.jpg" alt="Alfajores de maicena" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Información básica</h2>
@@ -46,7 +52,12 @@
             </ul>
           </div>
         </section>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/maicenapagdos.jpg" alt="Alfajores de maicena" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Tips</h2>
@@ -58,7 +69,12 @@
             </ul>
           </div>
         </section>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/maicenapagtres.jpg" alt="Alfajores" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Ingredientes</h2>
@@ -75,21 +91,23 @@
             </ul>
           </div>
         </section>
-        <h2 class="recetacuerpo__subtitulo">Preparación</h2>
-        <p class="recetacuerpo__pasos">
-          Comenzamos batiendo la manteca con el azúcar hasta que quede cremosa.
-          A esto le agregamos todas las yemas y un poco de la esencia.
-          Seguidamente, tamizamos la harina y el almidón y lo vamos agregando de
-          a poco mezclando. La masa la tapamos en un film y lo dejamos enfriando
-          por media hora. Enharinamos la mesada y estiramos la masa sobre la
-          misma con medio cm de espesor. Cortamos círculos del tamaño que
-          deseemos. Los círcullos los colocamos sobre una placa con papel
-          manteca y lo dejamos cocinar durante 10 minutos sin que se doren las
-          tapas pero si cocinadas (el horno debe estar precalentado a 160ºC).
-          Dejamos enfriar y armamos los alfajores poniéndoles dulce de leche
-          entre las masitas.
-        </p>
-        <h3>¡Perfecto para comer!</h3>
+        <section data-aos="zoom-in" data-aos-duration="1000">
+          <h2 class="recetacuerpo__subtitulo">Preparación</h2>
+          <p class="recetacuerpo__pasos">
+            Comenzamos batiendo la manteca con el azúcar hasta que quede
+            cremosa. A esto le agregamos todas las yemas y un poco de la
+            esencia. Seguidamente, tamizamos la harina y el almidón y lo vamos
+            agregando de a poco mezclando. La masa la tapamos en un film y lo
+            dejamos enfriando por media hora. Enharinamos la mesada y estiramos
+            la masa sobre la misma con medio cm de espesor. Cortamos círculos
+            del tamaño que deseemos. Los círcullos los colocamos sobre una placa
+            con papel manteca y lo dejamos cocinar durante 10 minutos sin que se
+            doren las tapas pero si cocinadas (el horno debe estar precalentado
+            a 160ºC). Dejamos enfriar y armamos los alfajores poniéndoles dulce
+            de leche entre las masitas.
+          </p>
+          <h3>¡Perfecto para comer!</h3>
+        </section>
       </section>
     </main>
 
@@ -99,5 +117,9 @@
       </p>
       <p class="footer__contenido">Desarrollado por: Sofía Miño</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

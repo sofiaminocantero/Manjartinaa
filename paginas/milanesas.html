@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <title>Manjartina</title>
   </head>
@@ -34,7 +35,12 @@
     <main class="colorfondo">
       <section class="recetacuerpo recetacuerpo__fotos">
         <h1 class="recetacuerpo__titulo">MILANESAS FÁCILES Y SENCILLAS</h1>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/milanesapaginauno.png" alt="Milanesas" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Información básica</h2>
@@ -48,7 +54,12 @@
             </ul>
           </div>
         </section>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/milanesapaginados.jpg" alt="Milanesas" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Tips</h2>
@@ -61,7 +72,12 @@
             </ul>
           </div>
         </section>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/milanesapaginatres.jpg" alt="Milanesas" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Ingredientes</h2>
@@ -75,17 +91,19 @@
             </ul>
           </div>
         </section>
-        <h2 class="recetacuerpo__subtitulo">Preparación</h2>
-        <p class="recetacuerpo__pasos">
-          En primer lugar, vamos a pelar los ajos y picarlos junto al perejil.
-          Luego, colocaremos los huevos en un bowl y los batiremos hasta que se
-          disuelvan. Le agregamos el orégano, perejil, los ajos y lo
-          condimentamos con sal y pimienta. Una vez hecho esto, pasamos la carne
-          por la mezcla y la dejamos unos segundos, para después pasarla por pan
-          rallado. Finalmente, las freímos en aceite caliente hasta que queden
-          doradas.
-        </p>
-        <h3>¡Ahora solo queda comer y disfrutar!</h3>
+        <section data-aos="zoom-in" data-aos-duration="1000">
+          <h2 class="recetacuerpo__subtitulo">Preparación</h2>
+          <p class="recetacuerpo__pasos">
+            En primer lugar, vamos a pelar los ajos y picarlos junto al perejil.
+            Luego, colocaremos los huevos en un bowl y los batiremos hasta que
+            se disuelvan. Le agregamos el orégano, perejil, los ajos y lo
+            condimentamos con sal y pimienta. Una vez hecho esto, pasamos la
+            carne por la mezcla y la dejamos unos segundos, para después pasarla
+            por pan rallado. Finalmente, las freímos en aceite caliente hasta
+            que queden doradas.
+          </p>
+          <h3>¡Ahora solo queda comer y disfrutar!</h3>
+        </section>
       </section>
     </main>
 
@@ -95,5 +113,9 @@
       </p>
       <p class="footer__contenido">Desarrollado por: Sofía Miño</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

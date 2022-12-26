@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <title>Manjartina</title>
   </head>
@@ -34,7 +35,12 @@
     <main class="colorfondo">
       <section class="recetacuerpo recetacuerpo__fotos">
         <h1 class="recetacuerpo__titulo">EMPANADAS DELICIOSAS</h1>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/empanadaspaginauno.png" alt="Empanadas" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Información básica</h2>
@@ -54,7 +60,12 @@
             </ul>
           </div>
         </section>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/empanadaspaginados.jpg" alt="Empanadas" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Tips</h2>
@@ -70,7 +81,12 @@
             </ul>
           </div>
         </section>
-        <section class="recetacuerpo__flex">
+        <section
+          class="recetacuerpo__flex"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <img src="../imagenes/empanadaspaginatres.jpg" alt="Empanadas" />
           <div class="recetacuerpo__flextexto">
             <h2 class="recetacuerpo__subtitulo">Ingredientes</h2>
@@ -86,17 +102,19 @@
             </ul>
           </div>
         </section>
-        <h2 class="recetacuerpo__subtitulo">Preparación</h2>
-        <p class="recetacuerpo__pasos">
-          Lo primero que vamos a hacer es saltear en el aceite a fuego fuerte
-          las cebollas y el morrón durante 5 minutos. A esto le añadimos la
-          carne y volvemos a saltear todo durante otros 5 minutos. Pasados los 5
-          minutos, retiramos y añadimos los condimentos a gusto personal. Lo
-          dejamos enfriar y agregamos los huevos duros. Ahora pasamos a rellenar
-          las tapas de empanadas y cerramos haciendo un repulgue. Las mandamos a
-          un horno precalentado a 200ºC y las dejamos dorar.
-        </p>
-        <h3>¡Ahora solo queda comer!</h3>
+        <section data-aos="zoom-in" data-aos-duration="1000">
+          <h2 class="recetacuerpo__subtitulo">Preparación</h2>
+          <p class="recetacuerpo__pasos">
+            Lo primero que vamos a hacer es saltear en el aceite a fuego fuerte
+            las cebollas y el morrón durante 5 minutos. A esto le añadimos la
+            carne y volvemos a saltear todo durante otros 5 minutos. Pasados los
+            5 minutos, retiramos y añadimos los condimentos a gusto personal. Lo
+            dejamos enfriar y agregamos los huevos duros. Ahora pasamos a
+            rellenar las tapas de empanadas y cerramos haciendo un repulgue. Las
+            mandamos a un horno precalentado a 200ºC y las dejamos dorar.
+          </p>
+          <h3>¡Ahora solo queda comer!</h3>
+        </section>
       </section>
     </main>
 
@@ -106,5 +124,9 @@
       </p>
       <p class="footer__contenido">Desarrollado por: Sofía Miño</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
