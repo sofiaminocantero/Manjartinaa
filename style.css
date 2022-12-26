@@ -186,6 +186,24 @@ ul li {
   font-size: 2rem;
 }
 
+.formularios {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  background-color: skyblue;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.aceptarterminos {
+  display: flex;
+}
+
 /* footer */
 .footer {
   display: flex;
@@ -199,4 +217,53 @@ ul li {
   font-weight: bold;
   font-size: 2rem;
   margin: 0px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+  /*index  */
+  .espaciotarjetas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  /* recetas */
+  .recetacuerpo__flex {
+    flex-direction: column;
+  }
+
+  .recetacuerpo__flextexto {
+    place-self: flex-start;
+  }
+
+  /* quienes somos */
+  .quienessomosfinal__video {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* index */
+  .espaciotarjetas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .tarjeta {
+    margin: 10px 0px;
+    width: 29rem;
+  }
+  /* recetas */
+  .recetacuerpo__flex {
+    flex-direction: column;
+  }
+
+  .recetacuerpo__flextexto {
+    place-self: flex-start;
+  }
+
+  /* quienes somos */
+  .quienessomosfinal__video {
+    width: 30rem;
+  }
 }

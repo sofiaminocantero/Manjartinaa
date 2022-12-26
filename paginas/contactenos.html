@@ -34,32 +34,36 @@
     <main class="colorfondo">
       <section class="introduccion">
         <h1 class="introduccion__titulo">Envianos tu sugerencia o duda</h1>
-        <form action="" class="formularios">
-          <label for="nombre" class="contactenoscampos">Nombre:</label>
-          <input type="text" id="nombre" placeholder="Ingrese su nombre" />
-          <label for="mail" class="contactenoscampos"
-            >Correo electrónico:</label
-          >
-          <input type="email" id="mail" placeholder="Ingrese su email" />
-          <fieldset>
-            <label for="duda" class="contactenoscampos"
-              >Ingrese su duda o sugerencia</label
+        <section class="formulario">
+          <form action="" class="formularios">
+            <label for="nombre" class="contactenoscampos">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+            <label for="mail" class="contactenoscampos"
+              >Correo electrónico:</label
             >
-            <textarea
-              name="duda"
-              id="duda"
-              cols="30"
-              rows="10"
-              placeholder="Ingrese su consulta"
-            ></textarea>
-          </fieldset>
-          <input type="checkbox" id="acepta" />
-          <label for="acepta" class="contactenoscampos"
-            >Acepto términos y condiciones</label
-          >
-          <input type="reset" value="Limpiar formulario" />
-          <input type="submit" value="Enviar formulario" />
-        </form>
+            <input type="email" id="mail" placeholder="Ingrese su email" />
+            <fieldset>
+              <label for="duda" class="contactenoscampos"
+                >Ingrese su duda o sugerencia</label
+              >
+              <textarea
+                name="duda"
+                id="duda"
+                cols="30"
+                rows="10"
+                placeholder="Ingrese su consulta"
+              ></textarea>
+            </fieldset>
+            <div class="aceptarterminos">
+              <input type="checkbox" id="acepta" />
+              <label for="acepta" class="contactenoscampos"
+                >Acepto términos y condiciones</label
+              >
+            </div>
+            <input type="reset" value="Limpiar formulario" />
+            <input type="submit" value="Enviar formulario" />
+          </form>
+        </section>
       </section>
     </main>
 
