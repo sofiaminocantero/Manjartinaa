@@ -76,3 +76,68 @@
     width: 30rem;
   }
 }
+
+@media only screen and (max-width: 485px) {
+  /* index */
+  .introduccion__titulo {
+    font-size: 4.3rem;
+  }
+  .introduccion__subtitulo {
+    font-size: 3.2rem;
+  }
+  .espaciotarjetas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .tarjeta {
+    margin: 10px 0px;
+    width: 20rem;
+    height: 37rem;
+    &:hover {
+      transform: scale(1.05);
+    }
+    img {
+      height: 14rem;
+      width: 14rem;
+    }
+  }
+
+  .tarjeta__encabezado h2 {
+    font-size: 3.1rem;
+  }
+
+  /* recetas */
+  .recetacuerpo__titulo {
+    font-size: 3rem;
+  }
+
+  .recetacuerpo__subtitulo {
+    font-size: 2.5rem;
+    ul li {
+      font-size: 2rem;
+    }
+  }
+
+  .recetacuerpo__flex {
+    flex-direction: column;
+  }
+
+  .recetacuerpo__flextexto {
+    place-self: flex-start;
+  }
+
+  .recetacuerpo__fotos img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  /* quienes somos */
+  .quienessomosfinal__video {
+    width: 20rem;
+  }
+
+  .quienessomosfinal__foto {
+    height: 25rem;
+    width: 22rem;
+  }
+}
