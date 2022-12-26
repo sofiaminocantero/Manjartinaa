@@ -1,0 +1,43 @@
+/* recetas */
+.recetacuerpo {
+  margin: 0px;
+  padding: 20px 30px;
+  img {
+    width: 20rem;
+    height: 20rem;
+    margin: 0px 20px;
+  }
+}
+
+.recetacuerpo__titulo {
+  margin: 0px;
+  animation: ease-in animacion 1s;
+}
+
+@keyframes animacion {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.recetacuerpo__subtitulo {
+  margin: 10px;
+}
+
+.recetacuerpo__pasos {
+  margin: 10px;
+}
+
+.recetacuerpo__flex {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.recetacuerpo__flextexto {
+  display: flex;
+  flex-direction: column;
+}

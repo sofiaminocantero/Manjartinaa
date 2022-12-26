@@ -1,0 +1,14 @@
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $azul;
+  border-top: 10px solid $amarillo;
+  padding: 25px 20px;
+}
+.footer__contenido {
+  color: $blanco;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0px;
+}

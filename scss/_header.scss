@@ -1,0 +1,27 @@
+/* header */
+.menuheader {
+  background-color: $azul;
+  border-bottom: 10px solid $amarillo;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  img {
+    height: 8rem;
+  }
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-collapse {
+  flex-grow: initial;
+}
+
+.nav-link {
+  color: $blanco;
+  font-size: 2rem;
+}

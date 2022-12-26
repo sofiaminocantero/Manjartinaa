@@ -1,0 +1,64 @@
+/* main introducción */
+.introduccion {
+  padding: 20px;
+}
+
+.introduccion__titulo {
+  margin: 10px;
+}
+
+.introduccion__subtitulo {
+  margin: 20px 10px;
+}
+
+.introduccion__info {
+  margin: 10px;
+}
+
+/* tarjetas */
+.espaciotarjetas {
+  padding: 0px 20px 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.tarjeta {
+  background-color: $blanco;
+  margin: 30px;
+  border: 5px solid $negro;
+  border-radius: 30px;
+  padding: 30px;
+  width: 30rem;
+  height: 45rem;
+  transition: all 0.5s;
+  img {
+    height: 400px;
+    width: 400px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.preparacion h3 a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: $blanco;
+  margin: 0px;
+}
+
+.tarjeta__encabezado {
+  text-align: center;
+  h2 {
+    margin: 0px 0px 10px 0px;
+  }
+  h3 {
+    margin: 10px;
+    text-align: end;
+  }
+  p {
+    margin: 0px;
+  }
+}

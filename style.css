@@ -1,19 +1,17 @@
-/* tipografiageneral y margen en body */
-.tipo {
-  font-family: "Roboto Condensed", sans-serif;
-  margin: 0px;
-}
-
+@charset "UTF-8";
 /* header */
 .menuheader {
   background-color: #009cff;
-  border-bottom: 10px solid yellow;
+  border-bottom: 10px solid #ffff00;
   text-align: center;
   position: sticky;
   top: 0;
   display: flex;
   flex-direction: column;
   z-index: 100;
+}
+.menuheader img {
+  height: 8rem;
 }
 
 .navbar {
@@ -25,15 +23,16 @@
 }
 
 .nav-link {
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
 }
 
-.menuheader img {
-  height: 8rem;
+/* tipografiageneral y margen en body */
+.tipo {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0px;
 }
 
-/* main en general*/
 .colorfondo {
   background-color: #b4e1ff;
 }
@@ -57,26 +56,9 @@ h3 {
   text-align: justify;
 }
 
-.preparacion h3 a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: white;
-  margin: 0px;
-}
-
 ul li {
   font-size: 2rem;
   text-align: justify;
-}
-
-.formularios form label {
-  font-size: 100px;
-  text-align: justify;
-}
-
-.imagenes img {
-  height: 400px;
-  width: 400px;
 }
 
 /* main introducción */
@@ -106,40 +88,53 @@ ul li {
 }
 
 .tarjeta {
-  background-color: white;
+  background-color: #ffffff;
   margin: 30px;
-  border: 5px solid black;
+  border: 5px solid #000000;
   border-radius: 30px;
   padding: 30px;
   width: 30rem;
   height: 45rem;
   transition: all 0.5s;
 }
-
+.tarjeta img {
+  height: 400px;
+  width: 400px;
+}
 .tarjeta:hover {
   transform: scale(1.1);
+}
+
+.preparacion h3 a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0px;
 }
 
 .tarjeta__encabezado {
   text-align: center;
 }
-.tarjeta__encabezado__titulo {
+.tarjeta__encabezado h2 {
   margin: 0px 0px 10px 0px;
 }
-
-.tarjeta__info {
-  margin: 0px;
-}
-
-.tarjeta__preparacion {
+.tarjeta__encabezado h3 {
   margin: 10px;
   text-align: end;
+}
+.tarjeta__encabezado p {
+  margin: 0px;
 }
 
 /* recetas */
 .recetacuerpo {
   margin: 0px;
   padding: 20px 30px;
+}
+.recetacuerpo img {
+  width: 20rem;
+  height: 20rem;
+  margin: 0px 20px;
 }
 
 .recetacuerpo__titulo {
@@ -155,13 +150,6 @@ ul li {
     transform: scale(1);
   }
 }
-
-.recetacuerpo__fotos img {
-  width: 20rem;
-  height: 20rem;
-  margin: 0px 20px;
-}
-
 .recetacuerpo__subtitulo {
   margin: 10px;
 }
@@ -181,16 +169,6 @@ ul li {
   flex-direction: column;
 }
 
-/* quienessomos */
-.quienessomosfinal {
-  text-align: center;
-}
-
-.quienessomosfinal__video {
-  width: 40rem;
-  margin-bottom: 40px;
-}
-
 /* contactenos */
 .contactenoscampos {
   font-size: 2rem;
@@ -200,9 +178,13 @@ ul li {
   display: flex;
   flex-direction: column;
   width: 20rem;
-  background-color: skyblue;
+  background-color: #87ceeb;
   padding: 2rem;
   border-radius: 2rem;
+}
+.formularios form label {
+  font-size: 100px;
+  text-align: justify;
 }
 
 .formulario {
@@ -222,16 +204,27 @@ ul li {
   display: flex;
 }
 
+/* quienessomos */
+.quienessomosfinal {
+  text-align: center;
+}
+
+.quienessomosfinal__video {
+  width: 40rem;
+  margin-bottom: 40px;
+}
+
 /* footer */
 .footer {
   display: flex;
   flex-direction: column;
   background-color: #009cff;
-  border-top: 10px solid yellow;
+  border-top: 10px solid #ffff00;
   padding: 25px 20px;
 }
+
 .footer__contenido {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   font-size: 2rem;
   margin: 0px;
@@ -244,44 +237,36 @@ ul li {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-
   /* recetas */
   .recetacuerpo__flex {
     flex-direction: column;
   }
-
   .recetacuerpo__flextexto {
     place-self: flex-start;
   }
-
   /* quienes somos */
   .quienessomosfinal__video {
     width: 35rem;
   }
 }
-
 @media only screen and (max-width: 768px) {
   /*index  */
   .espaciotarjetas {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-
   /* recetas */
   .recetacuerpo__flex {
     flex-direction: column;
   }
-
   .recetacuerpo__flextexto {
     place-self: flex-start;
   }
-
   /* quienes somos */
   .quienessomosfinal__video {
     width: 35rem;
   }
 }
-
 @media only screen and (max-width: 576px) {
   /* index */
   .espaciotarjetas {
@@ -295,23 +280,21 @@ ul li {
   .tarjeta:hover {
     transform: scale(1.05);
   }
-
   /* recetas */
   .recetacuerpo__flex {
     flex-direction: column;
   }
-
   .recetacuerpo__flextexto {
     place-self: flex-start;
   }
-
   .recetacuerpo__fotos img {
     width: 18rem;
     height: 18rem;
   }
-
   /* quienes somos */
   .quienessomosfinal__video {
     width: 30rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

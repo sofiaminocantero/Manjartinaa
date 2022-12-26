@@ -1,0 +1,34 @@
+/* contactenos */
+.contactenoscampos {
+  font-size: 2rem;
+}
+
+.formularios {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  background-color: $celesteclaro;
+  padding: 2rem;
+  border-radius: 2rem;
+  form label {
+    font-size: 100px;
+    text-align: justify;
+  }
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.form-check {
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.formulario-enviar {
+  margin: 1rem 0rem;
+}
+
+.aceptarterminos {
+  display: flex;
+}

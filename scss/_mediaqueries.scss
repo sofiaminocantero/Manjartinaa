@@ -1,0 +1,78 @@
+/* media queries */
+@media only screen and (max-width: 1300px) {
+  /*index  */
+  .espaciotarjetas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  /* recetas */
+  .recetacuerpo__flex {
+    flex-direction: column;
+  }
+
+  .recetacuerpo__flextexto {
+    place-self: flex-start;
+  }
+
+  /* quienes somos */
+  .quienessomosfinal__video {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*index  */
+  .espaciotarjetas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  /* recetas */
+  .recetacuerpo__flex {
+    flex-direction: column;
+  }
+
+  .recetacuerpo__flextexto {
+    place-self: flex-start;
+  }
+
+  /* quienes somos */
+  .quienessomosfinal__video {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* index */
+  .espaciotarjetas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .tarjeta {
+    margin: 10px 0px;
+    width: 29rem;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  /* recetas */
+  .recetacuerpo__flex {
+    flex-direction: column;
+  }
+
+  .recetacuerpo__flextexto {
+    place-self: flex-start;
+  }
+
+  .recetacuerpo__fotos img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  /* quienes somos */
+  .quienessomosfinal__video {
+    width: 30rem;
+  }
+}

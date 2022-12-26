@@ -1,0 +1,33 @@
+/* tipografiageneral y margen en body */
+.tipo {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0px;
+}
+
+.colorfondo {
+  background-color: $celeste;
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+ul li {
+  font-size: 2rem;
+  text-align: justify;
+}
