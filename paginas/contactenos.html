@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../imagenes/flag-round-250.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Manjartina</title>
+  </head>
+  <body class="tipo">
+    <header class="menuheader">
+      <nav class="menuheader__contenido">
+        <ul class="menunav nosubrayado">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./quienessomos.html">Quiénes somos</a></li>
+          <li><a href="./contactenos.html">Contactenos</a></li>
+        </ul>
+      </nav>
+      <a href="../index.html">
+        <img src="../imagenes/manjartinalogo.png" alt="Manjartina" />
+      </a>
+    </header>
+
+    <main class="colorfondo">
+      <section class="introduccion">
+        <h1 class="introduccion__titulo">Envianos tu sugerencia o duda</h1>
+        <form action="" class="formularios">
+          <label for="nombre" class="contactenoscampos">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+          <label for="mail" class="contactenoscampos"
+            >Correo electrónico:</label
+          >
+          <input type="email" id="mail" placeholder="Ingrese su email" />
+          <fieldset>
+            <label for="duda" class="contactenoscampos"
+              >Ingrese su duda o sugerencia</label
+            >
+            <textarea
+              name="duda"
+              id="duda"
+              cols="30"
+              rows="10"
+              placeholder="Ingrese su consulta"
+            ></textarea>
+          </fieldset>
+          <input type="checkbox" id="acepta" />
+          <label for="acepta" class="contactenoscampos"
+            >Acepto términos y condiciones</label
+          >
+          <input type="reset" value="Limpiar formulario" />
+          <input type="submit" value="Enviar formulario" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__contenido">
+        Manjartina- Todos los derechos reservados- 2022.
+      </p>
+      <p class="footer__contenido">Desarrollado por: Sofía Miño</p>
+    </footer>
+  </body>
+</html>
