@@ -1,9 +1,8 @@
 /* quienessomos */
 .quienessomosfinal {
   text-align: center;
-}
-
-.quienessomosfinal__video {
-  width: 40rem;
-  margin-bottom: 40px;
+  &__video {
+    width: 40rem;
+    margin-bottom: 40px;
+  }
 }

@@ -18,16 +18,27 @@ h2 {
 }
 
 p {
-  font-size: 2rem;
-  text-align: justify;
+  @extend .fontdos;
 }
 
 h3 {
-  font-size: 2rem;
-  text-align: justify;
+  @extend .fontdos;
 }
 
 ul li {
+  @extend .fontdos;
+}
+
+// extends
+.fontdos {
   font-size: 2rem;
   text-align: justify;
+}
+.flexcentrado {
+  display: flex;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
 }

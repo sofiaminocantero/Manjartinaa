@@ -1,19 +1,16 @@
 /* main introducción */
 .introduccion {
   padding: 20px;
-}
-
-.introduccion__titulo {
-  margin: 10px;
-}
-
-.introduccion__subtitulo {
-  margin: 20px 10px;
-  font-size: 4rem;
-}
-
-.introduccion__info {
-  margin: 10px;
+  &__titulo {
+    margin: 10px;
+  }
+  &__subtitulo {
+    margin: 20px 10px;
+    font-size: 4rem;
+  }
+  &__info {
+    margin: 10px;
+  }
 }
 
 /* tarjetas */
@@ -41,6 +38,19 @@
   &:hover {
     transform: scale(1.1);
   }
+  &__encabezado {
+    text-align: center;
+    h2 {
+      margin: 0px 0px 10px 0px;
+    }
+    h3 {
+      margin: 10px;
+      text-align: end;
+    }
+    p {
+      margin: 0px;
+    }
+  }
 }
 
 .preparacion h3 a {
@@ -48,18 +58,4 @@
   text-decoration: none;
   color: $blanco;
   margin: 0px;
-}
-
-.tarjeta__encabezado {
-  text-align: center;
-  h2 {
-    margin: 0px 0px 10px 0px;
-  }
-  h3 {
-    margin: 10px;
-    text-align: end;
-  }
-  p {
-    margin: 0px;
-  }
 }

@@ -5,8 +5,7 @@
   text-align: center;
   position: sticky;
   top: 0;
-  display: flex;
-  flex-direction: column;
+  @extend .flexcolumn;
   z-index: 100;
   img {
     height: 8rem;
@@ -15,10 +14,9 @@
 
 .navbar {
   width: 100%;
-}
-
-.navbar-collapse {
-  flex-grow: initial;
+  &-collapse {
+    flex-grow: initial;
+  }
 }
 
 .nav-link {

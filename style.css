@@ -6,8 +6,6 @@
   text-align: center;
   position: sticky;
   top: 0;
-  display: flex;
-  flex-direction: column;
   z-index: 100;
 }
 .menuheader img {
@@ -17,7 +15,6 @@
 .navbar {
   width: 100%;
 }
-
 .navbar-collapse {
   flex-grow: initial;
 }
@@ -46,35 +43,32 @@ h2 {
   font-size: 4rem;
 }
 
-p {
+.fontdos, p, h3, ul li {
   font-size: 2rem;
   text-align: justify;
 }
 
-h3 {
-  font-size: 2rem;
-  text-align: justify;
+.flexcentrado, .recetacuerpo__flex {
+  display: flex;
+  align-items: center;
 }
 
-ul li {
-  font-size: 2rem;
-  text-align: justify;
+.flexcolumn, .footer, .formularios, .recetacuerpo__flextexto, .menuheader {
+  display: flex;
+  flex-direction: column;
 }
 
 /* main introducción */
 .introduccion {
   padding: 20px;
 }
-
 .introduccion__titulo {
   margin: 10px;
 }
-
 .introduccion__subtitulo {
   margin: 20px 10px;
   font-size: 4rem;
 }
-
 .introduccion__info {
   margin: 10px;
 }
@@ -105,14 +99,6 @@ ul li {
 .tarjeta:hover {
   transform: scale(1.1);
 }
-
-.preparacion h3 a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #ffffff;
-  margin: 0px;
-}
-
 .tarjeta__encabezado {
   text-align: center;
 }
@@ -127,6 +113,13 @@ ul li {
   margin: 0px;
 }
 
+.preparacion h3 a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0px;
+}
+
 /* recetas */
 .recetacuerpo {
   margin: 0px;
@@ -137,12 +130,9 @@ ul li {
   height: 20rem;
   margin: 0px 20px;
 }
-
 .recetacuerpo__titulo {
-  margin: 0px;
   animation: ease-in animacion 1s;
 }
-
 @keyframes animacion {
   0% {
     transform: scale(0);
@@ -154,30 +144,18 @@ ul li {
 .recetacuerpo__subtitulo {
   margin: 10px;
 }
-
 .recetacuerpo__pasos {
   margin: 10px;
 }
-
 .recetacuerpo__flex {
-  display: flex;
-  align-items: center;
   padding: 1rem;
 }
-
-.recetacuerpo__flextexto {
-  display: flex;
-  flex-direction: column;
-}
-
 /* contactenos */
 .contactenoscampos {
   font-size: 2rem;
 }
 
 .formularios {
-  display: flex;
-  flex-direction: column;
   width: 20rem;
   background-color: #87ceeb;
   padding: 2rem;
@@ -192,13 +170,12 @@ ul li {
   display: flex;
   justify-content: center;
 }
+.formulario-enviar {
+  margin: 1rem 0rem;
+}
 
 .form-check {
   margin: 1rem 0rem 0rem 0rem;
-}
-
-.formulario-enviar {
-  margin: 1rem 0rem;
 }
 
 .aceptarterminos {
@@ -209,7 +186,6 @@ ul li {
 .quienessomosfinal {
   text-align: center;
 }
-
 .quienessomosfinal__video {
   width: 40rem;
   margin-bottom: 40px;
@@ -217,13 +193,10 @@ ul li {
 
 /* footer */
 .footer {
-  display: flex;
-  flex-direction: column;
   background-color: #009cff;
   border-top: 10px solid #ffff00;
   padding: 25px 20px;
 }
-
 .footer__contenido {
   color: #ffffff;
   font-weight: bold;
